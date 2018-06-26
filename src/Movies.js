@@ -13,6 +13,7 @@ const Movies = () => (
       plot
       poster
       imdbRating
+      genres
       }
     }
   `}
@@ -23,7 +24,7 @@ const Movies = () => (
 
     console.log(data)
     return data.movies.map((currentMovie) => (
-      <Movie movie={currentMovie} />
+        <Movie movie={currentMovie} /> 
     ));
 
   }}
@@ -31,3 +32,4 @@ const Movies = () => (
 );
 
 export default Movies;
+
